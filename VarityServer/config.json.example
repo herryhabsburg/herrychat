@@ -1,0 +1,15 @@
+{
+  "email": {
+    "user": "YOUR_QQ_EMAIL@qq.com",
+    "pass": "YOUR_QQ_SMTP_AUTH_CODE"
+  },
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3308
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6390,
+    "passwd": "YOUR_REDIS_PASSWORD"
+  }
+}

@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="gitserver.vcxproj" Id="b7ad8f8a-98ed-4b9e-aeb5-22ccbf62513d" />
+</Solution>

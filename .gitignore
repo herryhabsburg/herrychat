@@ -1,0 +1,54 @@
+# ===== 第三方依赖库（clone 后按 README 自行安装）=====
+/boost/
+/grpc/
+/mysql1/
+/mysql_connector/
+/nodejs/
+/Redis/
+/VarityServer/node_modules/
+
+# ===== 编译产物 =====
+x64/
+debug/
+release/
+bin/
+build/
+*.obj
+*.o
+*.pdb
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.tlog
+Makefile
+Makefile.Debug
+Makefile.Release
+
+# ===== Qt 构建生成文件 =====
+ui_*.h
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+.qmake.stash
+
+# ===== 日志与临时文件 =====
+*.log
+err.txt
+out.txt
+build_log*.txt
+client_build*.log
+test_result.txt
+login_test.txt
+varify*.log
+mail_test*.log
+
+# ===== VS / QtCreator 缓存 =====
+.vs/
+.qtcreator/
+.qtc_clangd/
+
+# ===== 敏感配置（本地保留，公开模板见 *.example）=====
+config.ini
+config.json

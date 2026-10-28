@@ -1,0 +1,18 @@
+[GateServer]
+Port = 8080
+[VarifyServer]
+Host = 127.0.0.1
+Port = 50051
+[StatusServer]
+Host = 127.0.0.1
+Port = 50052
+[Redis]
+Host = 127.0.0.1
+Port = 6390
+Passwd = YOUR_REDIS_PASSWORD
+[Mysql]
+Host = 127.0.0.1
+User = root
+Schema = herry
+Port = 3308
+Passwd = YOUR_MYSQL_PASSWORD

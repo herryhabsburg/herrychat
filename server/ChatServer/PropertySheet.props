@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>E:\myserve\boost\libjson\include;E:\myserve\boost\boost-1_92;E:\myserve\Redis\redis\deps\hiredis;E:\myserve\mysql_connector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\myserve\boost\libjson\lib;E:\myserve\boost\lib;E:\myserve\Redis\redis\lib;E:\myserve\mysql_connector\lib64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>json_vc71_libmtd.lib;Win32_Interop.lib;hiredis.lib;mysqlcppconn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\myserve\mysql_connector\lib64\debug\vs14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)config.ini  $(SolutionDir)$(Platform)\$(Configuration)\   /y
+xcopy $(ProjectDir)*.dll   $(SolutionDir)$(Platform)\$(Configuration)\   /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

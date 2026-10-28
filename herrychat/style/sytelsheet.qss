@@ -1,0 +1,79 @@
+/* ===== 只给名字叫loginFrame的QFrame加载背景图 ===== */
+QFrame#loginFrame{
+    background-image:url(:/res/zsy.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+/* 输入框 */
+QLineEdit {
+    color: #ffffff;
+    background-color: rgba(40, 55, 68, 220);
+    padding: 0 8px;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+/* 标签文字：黑色字体 */
+QLabel{
+    color:#111111;
+    background-color:transparent;
+    font-size:16px;
+    font-weight: bold;
+}
+
+QLabel#label{
+    color:#111111;
+    background-color:transparent;
+    font-size:16px;
+    font-weight: bold;
+}
+
+QLabel#label_2{
+    color:#111111;
+    background-color:transparent;
+    font-size:16px;
+    font-weight: bold;
+}
+
+QLabel#forgotPwdLabel{
+    color:#111111;
+    background-color:transparent;
+    font-size:14px;
+    font-weight: bold;
+}
+
+/* 复选框 */
+QCheckBox {
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+}
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+/* 按钮 */
+QPushButton {
+    font-size: 20px;
+    color: #111111;
+    background-color: #ffffff;
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #cccccc;
+}
+QPushButton:pressed {
+    color: #ffffff;
+    background-color: #555555;
+    border-style: inset;
+}
+#errtip[state='normal']{
+   color: green;
+}
+
+#errtip[state='err']{
+   color: red;
+}
